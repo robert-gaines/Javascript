@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .list-title
+        {
+            margin: auto 0;
+            font: green;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p>
+            <h3 class="list-title">List</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </p>
+    </div>
+
+    <script>
+
+        let dom_var = document.all;
+
+        //console.log(dom_var);
+
+        for(let i = 0; i < dom_var.length; i++)
+        {
+            console.log(dom_var[i]);
+        }
+
+        console.log(document.domain);
+        console.log(document.URL);
+
+        let test = document.body;
+        console.log(test);
+
+    </script>
+
+</body>
+</html>

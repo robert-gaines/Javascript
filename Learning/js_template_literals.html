@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* Template Literals */ 
+
+        const planet = 'Saturn';
+        const galaxy = 'Milky Way';
+        const diameter = 72367;
+        let isPlanet = true;
+
+        html = '<ul><li>Name: '+planet+'</li>';
+        html += '<li>'+galaxy+'</li>';
+        html += '<li>'+diameter+'</li>';
+
+        //document.body.innerHTML = html;
+
+        html_template = `
+        <ul>
+            <li>${planet}</li>
+            <li>${galaxy}</li>
+            <li>${diameter}</li>
+            <li>${isPlanet = true ? 'Planet' : 'Not a planet'}</li>
+        </ul>
+        `
+
+        document.body.innerHTML =html_template;
+
+    </script>
+</body>
+</html>

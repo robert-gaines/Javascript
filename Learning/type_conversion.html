@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /* Type Conversion */ 
+
+        let val;
+        val = '42';
+
+        console.log("Value: ",val);
+        console.log(typeof val);
+
+        console.log("Length of the string: ",val.length);
+
+        val = Number(val);
+
+        console.log("Value: ",val);
+        console.log("Type is: ",typeof val);
+
+        let numberVar = 42;
+        let conVar = numberVar.toString()
+        console.log(conVar);
+
+        var pi = 3.14;
+        console.log("Variable: ",pi)
+        console.log("Variable truncated: ",pi.toFixed(1))
+
+        /* NAN -> Not a Number */document
+
+        console.log("Parse to an integer...");
+        console.log(parseInt('100.30'));
+
+        console.log("Parse to float...");
+        console.log(parseFloat('100.30'));
+
+    </script>
+
+</body>
+</html>

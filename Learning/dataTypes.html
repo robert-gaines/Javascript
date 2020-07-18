@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Primitive Data Types:
+            - Stored directly in the location the variable accesses
+            - Stored on the stack
+
+            Reference Data Types:
+            - Accessed by reference
+            - Object that are stored on the heap
+            - A point to a location memory
+
+            JavaScript Data Types
+            ---------------------
+            -> 6 Primitives
+            - String
+            - Number
+            - Boolean
+            - Null
+            - Undefined
+            - Symbols (ES6)
+
+            -> Variables are undefined by default
+
+            -> Reference Types
+            ___________________
+            - Arrays
+            - Object Literals
+            - Etc.
+
+            -> JS is a dynamically typed language
+
+        */
+
+        // Primitive
+
+        var a = 'String Variable';
+        var b = 1;
+        var c = true
+        let d = null;
+
+
+        console.log("String variable: ", a);
+        console.log(typeof a);
+
+        console.log("Number variable: ", b);
+        console.log(typeof b);
+        
+        console.log("Boolean variable: ", c);
+        console.log(typeof c);
+
+        const addr = {
+            city: 'City',
+            state: 'State'
+        }
+
+        console.log(typeof addr)
+        
+
+    </script>
+
+</body>
+</html>

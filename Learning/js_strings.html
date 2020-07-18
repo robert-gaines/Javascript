@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+       const stringVar = "This is a string variable";
+       const secondString = " the string continues here";
+
+       let value = stringVar+secondString;
+
+       console.log("Concatenated String: ",value)
+
+        /* String Escaping */
+
+        // Use double quotes 
+        // Use a back slash '\'
+
+        console.log("Adjective: noun\'s modifier");
+
+        console.log(stringVar.concat(' ',secondString));
+
+        console.log(stringVar.toUpperCase());
+        console.log(stringVar.toLowerCase());
+
+        console.log("Index string: ", stringVar[0]);
+        console.log("Index Of Method, v is at: ",stringVar.indexOf('v'));
+
+        console.log("Char at, index 2-> ",stringVar.charAt(2));
+
+        console.log("Substring-> ",stringVar.substring(0,16));
+
+        console.log("Slice-> ", stringVar.slice(-6));
+
+        let chunks = stringVar.split(' ');
+
+        console.log(chunks);
+
+        for(let i = 0; i < chunks.length; i++)
+        {
+            console.log(chunks[i]);
+        }
+
+        /* Includes -> String Search */
+
+        console.log("String variable includes 'string'?",stringVar.includes('string'));
+
+    </script>
+
+</body>
+</html>

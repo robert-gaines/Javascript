@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const js_array = ['a','b','c','d'];
+
+        const alt_array = [1,2,3,4,5,6];
+
+        const third_array = new Array(true,false,null);
+
+        /* Data types can be mixed in JS Arrays */
+
+        console.log(js_array);
+
+        console.log("Array length: ",js_array.length)
+
+        console.log("Is it an array? -> ", Array.isArray(js_array));
+
+        js_array.push('e');
+
+        console.log(js_array);
+
+        js_array.unshift('a');
+
+        console.log(js_array);
+
+        js_array.pop('e');
+
+        js_array.shift('a')
+
+        console.log(js_array);
+
+        js_array.pop('a');
+
+        console.log(js_array.reverse());
+
+        console.clear();
+
+        random_numbers = new Array();
+
+        for(var i = 0; i <= 5; i++)
+        {
+            random_numbers.push(Math.floor(Math.random()*1000));
+        }
+
+        for(var j = 0; j < random_numbers.length;j++)
+        {
+            console.log(random_numbers[j]);
+        }
+
+        sorted_rands = random_numbers.sort();
+
+        console.log(sorted_rands);
+
+    </script>
+
+</body>
+</html>

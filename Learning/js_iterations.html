@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /* JS Loops */
+
+        for(let i = 0; i <= 10; i++)
+        {
+            console.log("[*] Current value of i is-> "+i);
+        }
+
+        let i = 0;
+
+        while(i <= 10)
+        {
+            console.log("[*] Value is currently: "+i);
+            i++;
+        }
+
+        let j = 10;
+
+        do
+        {
+            console.log("[*] Value is currently: "+j);
+            j--;
+        }while(j > 0)
+
+        const values = ['a','b','c'];
+
+        console.log("Testing the foreach loop...");
+
+        values.forEach(function(value,index){
+            console.log(`${index} : ${value}`);
+        })        
+
+        /* JS Map */
+
+        const users = [
+            {id:2,name:'User2'},
+            {id:3,name:'User3'}
+        ];
+
+        const ids = users.map(function(user){
+            return user.id;
+        })
+
+        console.log(ids);
+
+        /* For In Loop */
+
+        const user = {
+            first: 'FirstName',
+            last: 'LastName',
+            id: '123'
+        }
+
+        for(let x in user){
+            console.log(`${x} : ${user[x]}`);
+        }
+
+    </script>
+
+</body>
+</html>
