@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 id="test">This is a test</h1>
+    
+    <p id = 'lorem'>
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quasi tenetur minima ullam, dolorum harum molestiae vero nisi quam fugit dignissimos, atque consequuntur qui? Voluptatum animi at iste qui laborum.
+
+    </p>
+
+    <script>
+
+        /*  
+        
+            DOM Selectors:
+            -> Single element
+            -> Multiple element
+        
+        */
+
+        console.log(document.getElementById('test').id);
+
+        document.getElementById('test').style.background = 'green';
+
+        document.getElementById('test').style.border = '2px solid black';
+
+        document.getElementById('test').textContent = 'Another test';
+
+        document.getElementById('test').innerText = 'Good Test';
+
+        document.getElementById('test').innerHTML = "<span style='color: white'> Test HTML </span>"
+
+        console.log(document.querySelector('#test'));
+
+        console.log(document.querySelector('h1'));
+
+        document.getElementById('lorem').style.background = 'cyan';
+
+        let borders = ['green','pink'] ;//,'pink','red','yellow'];
+
+        borders.forEach(function(color){
+            document.getElementById('lorem').style.background = color;
+        })
+
+        
+
+    </script>
+
+
+</body>
+</html>
